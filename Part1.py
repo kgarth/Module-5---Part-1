@@ -14,11 +14,12 @@ def get_years():
 
 def gather_rainfall(years):
     rainfall_data = []
+    months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     for i in range(years):
         for j in range(12):
             while True:
                 try:
-                    temp = int(input('How much rain (in inches) occured for year {}, month {}: '.format(i + 1, j + 1)))
+                    temp = int(input('How much rain (in inches) occured for year {} in {}: '.format(i + 1, months[j])))
 
                     if temp < 0:
                         raise ValueError
