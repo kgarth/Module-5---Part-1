@@ -36,6 +36,6 @@ def main():
     print('-Rainfall Report-')
     print('  Number of Months: {}'.format(years_requested * 12))
     print('  Total Inches of rainfall: {}'.format(sum(monthly_rainfall)))
-    print('  Average Rainfall per Month: {}'.format(sum(monthly_rainfall) / len(monthly_rainfall)))
+    print('  Average Rainfall per Month: {:.2f}'.format(sum(monthly_rainfall) / len(monthly_rainfall)))
 
 if __name__ == '__main__':main()
